@@ -1,5 +1,4 @@
-Welcome to my portfolio! I'm a data analyst passionate about uncovering insights from data. Here you'll find a collection of my projects.
-
+I am a data professional with a passion for building robust data pipelines and uncovering actionable insights. My experience spans the full data lifecycle, from data engineering and analysis to data science, allowing me to transform raw data into measurable business value.
 ---
 
 ## My Projects
