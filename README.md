@@ -1,4 +1,5 @@
 I am a data professional with a passion for building robust data pipelines and uncovering actionable insights. My experience spans the full data lifecycle, from data engineering and analysis to data science, allowing me to transform raw data into measurable business value.
+
 ---
 
 ## My Projects
