@@ -1,218 +1,275 @@
 <!DOCTYPE html>
-<html lang="en">
+<html class="light" lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Alexis Vendrix - Senior Data Analyst & Data Engineer">
-    <title>Alexis Vendrix - Senior Data Analyst & Data Engineer</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8"/>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+  <meta name="description" content="Alexis Vendrix - Senior Data Analyst & Data Engineer">
+  <title>Alexis Vendrix - Data Professional</title>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "surface-container": "#f0edef",
+            "on-primary": "#ffffff",
+            "surface-bright": "#fcf8fa",
+            "tertiary-container": "#002114",
+            "surface-container-low": "#f6f3f5",
+            "secondary-fixed-dim": "#b9c7e0",
+            "on-tertiary": "#ffffff",
+            "on-surface-variant": "#45464d",
+            "on-tertiary-container": "#069669",
+            "surface": "#fcf8fa",
+            "background": "#fcf8fa",
+            "primary-fixed-dim": "#bec6e0",
+            "on-primary-fixed-variant": "#3f465c",
+            "on-secondary-container": "#57657b",
+            "primary": "#000000",
+            "surface-variant": "#e4e2e4",
+            "on-tertiary-fixed": "#002114",
+            "on-secondary-fixed": "#0d1c2f",
+            "surface-container-lowest": "#ffffff",
+            "on-secondary": "#ffffff",
+            "outline": "#76777d",
+            "surface-container-highest": "#e4e2e4",
+            "surface-container-high": "#eae7e9",
+            "secondary": "#515f74",
+            "on-tertiary-fixed-variant": "#005137",
+            "primary-fixed": "#dae2fd",
+            "inverse-primary": "#bec6e0",
+            "on-primary-container": "#7c839b",
+            "inverse-on-surface": "#f3f0f2",
+            "tertiary": "#000000",
+            "error": "#ba1a1a",
+            "on-error-container": "#93000a",
+            "on-surface": "#1b1b1d",
+            "outline-variant": "#c6c6cd",
+            "inverse-surface": "#303032",
+            "on-error": "#ffffff",
+            "on-secondary-fixed-variant": "#3a485c",
+            "on-primary-fixed": "#131b2e",
+            "secondary-container": "#d5e3fd",
+            "tertiary-fixed-dim": "#68dba9",
+            "surface-dim": "#dcd9db",
+            "error-container": "#ffdad6",
+            "secondary-fixed": "#d5e3fd",
+            "surface-tint": "#565e74",
+            "tertiary-fixed": "#85f8c4",
+            "on-background": "#1b1b1d",
+            "primary-container": "#131b2e"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "fontFamily": {
+            "headline": ["Manrope"],
+            "body": ["Manrope"],
+            "label": ["Manrope"]
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    body {
+      font-family: 'Manrope', sans-serif;
+      background-color: #fcf8fa;
+    }
+  </style>
 </head>
-<body>
-    <div class="container">
-        <!-- Header -->
-        <header class="header">
-            <h1>Alexis Vendrix</h1>
-            <p class="subtitle">Senior Data Analyst & Data Engineer</p>
-            <div class="contact-info">
-                <a href="mailto:a.vendrix@gmail.com">a.vendrix@gmail.com</a>
-                <span class="separator">•</span>
-                <span>Barcelona, Spain</span>
-                <span class="separator">•</span>
-                <a href="https://github.com" target="_blank">GitHub</a>
-            </div>
-        </header>
-
-        <!-- About Section -->
-        <section class="section">
-            <h2>About</h2>
-            <p>Data professional with 8+ years of experience in analytics and data engineering. Specialized in building dashboards, ETL pipelines, and analytical solutions using modern data stack tools. Strong background in credit risk analytics and regulatory reporting.</p>
-        </section>
-
-        <!-- Experience Section -->
-        <section class="section">
-            <h2>Experience</h2>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>Senior Data Analyst & Data Engineer</h3>
-                    <span class="date">08/2020 – Present</span>
-                </div>
-                <p class="company">Belfius Bank • Brussels, Belgium</p>
-                <ul>
-                    <li>Customer Data Analytics and involvement in multiple stages of the data life cycle</li>
-                    <li>Dashboards in SAS VA (+ migration to Qlik Sense) with KPIs and campaign tracking</li>
-                    <li>AD HOC analysis using SAS VIYA, SAS DI, SAS EG, Python, HiveQL, Impala</li>
-                    <li>Creation and maintenance of ETL jobs for commercial reports from multiple sources</li>
-                    <li>Member of data visualization and data engineering communities</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>SAS Developer</h3>
-                    <span class="date">02/2020 – 08/2020</span>
-                </div>
-                <p class="company">Euler Hermes • Brussels, Belgium</p>
-                <ul>
-                    <li>Automation of key figures calculation, reports and dashboards</li>
-                    <li>Creation of modeling database for advanced analysis and back testing</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>Business & Functional Analyst</h3>
-                    <span class="date">11/2017 – 12/2019</span>
-                </div>
-                <p class="company">BNP Paribas Fortis • Brussels, Belgium</p>
-                <ul>
-                    <li>Credit risk data analysis and measurement</li>
-                    <li>Support for Testudo, the central historical credit risk database</li>
-                    <li>Business requirements gathering and database design for credit risk data</li>
-                    <li>SQL query development, testing, and reporting</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>Business & SAS Developer</h3>
-                    <span class="date">10/2018 – 07/2019</span>
-                </div>
-                <p class="company">Argenta • Antwerp, Belgium</p>
-                <ul>
-                    <li>Implementation of SAS solution for new EBA definition of default</li>
-                    <li>Production of key figures (RWA, LGD, PD, Default rates, ECB reports)</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>Functional Analyst & SAS Developer</h3>
-                    <span class="date">07/2017 – 07/2018</span>
-                </div>
-                <p class="company">BNPP Leasing Solutions • Nanterre, France</p>
-                <ul>
-                    <li>Creation of RISK flows (JSON files) to fit group requirements</li>
-                    <li>Data feed analysis to comply with functional specifications</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>Business & Functional Analyst</h3>
-                    <span class="date">07/2016 – 06/2017</span>
-                </div>
-                <p class="company">BNP Paribas • Paris, France</p>
-                <ul>
-                    <li>Credit and counterparty risk regulatory reporting software analysis</li>
-                    <li>Regulatory capital calculation (CRD IV & CRR)</li>
-                </ul>
-            </div>
-
-            <div class="job">
-                <div class="job-header">
-                    <h3>SAS Developer</h3>
-                    <span class="date">12/2015 – 07/2016</span>
-                </div>
-                <p class="company">Allianz • Brussels, Belgium</p>
-                <ul>
-                    <li>Automation of key figures (Cash flow projection, IRR, LGD, LTV)</li>
-                    <li>Assets and Liabilities reporting automation</li>
-                </ul>
-            </div>
-        </section>
-
-        <!-- Skills Section -->
-        <section class="section">
-            <h2>Skills</h2>
-            <div class="skills-grid">
-                <div class="skill-category">
-                    <h4>Data & Analytics</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">SQL</span>
-                        <span class="skill-tag">Python</span>
-                        <span class="skill-tag">SAS VIYA</span>
-                        <span class="skill-tag">SAS VA</span>
-                        <span class="skill-tag">SAS DI</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Visualization & BI</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Tableau</span>
-                        <span class="skill-tag">Qlik Sense</span>
-                        <span class="skill-tag">SAS Studio</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Big Data & Cloud</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">BigQuery</span>
-                        <span class="skill-tag">HiveQL</span>
-                        <span class="skill-tag">Cloudera Impala</span>
-                        <span class="skill-tag">Oracle</span>
-                    </div>
-                </div>
-                <div class="skill-category">
-                    <h4>Other</h4>
-                    <div class="skill-tags">
-                        <span class="skill-tag">R</span>
-                        <span class="skill-tag">GitHub</span>
-                        <span class="skill-tag">Excel</span>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Education Section -->
-        <section class="section">
-            <h2>Education</h2>
-            <div class="education">
-                <div>
-                    <h3>Master's Degree in Actuarial Sciences</h3>
-                    <p class="company">Université Catholique de Louvain • 2015</p>
-                </div>
-                <div>
-                    <h3>Bachelor's Degree in Engineering</h3>
-                    <p class="company">Université Catholique de Louvain • 2013</p>
-                </div>
-            </div>
-        </section>
-
-        <!-- Certifications Section -->
-        <section class="section">
-            <h2>Certifications</h2>
-            <ul class="certifications">
-                <li>Google Data Analytics Professional Certificate</li>
-                <li>CSM – Certified ScrumMaster</li>
-                <li>SAS Certified Base Programmer for SAS 9</li>
-            </ul>
-        </section>
-
-        <!-- Languages Section -->
-        <section class="section">
-            <h2>Languages</h2>
-            <div class="languages">
-                <div><span>French</span> <span class="level">Native</span></div>
-                <div><span>English</span> <span class="level">Proficient</span></div>
-                <div><span>Dutch</span> <span class="level">Advanced</span></div>
-                <div><span>Spanish</span> <span class="level">Beginner</span></div>
-            </div>
-        </section>
-
-        <!-- Passions Section -->
-        <section class="section">
-            <h2>Interests</h2>
-            <ul class="interests">
-                <li>Photography (MotionKaptur)</li>
-                <li>New Technology</li>
-                <li>Sports (Beach volley, paddle, cycling)</li>
-            </ul>
-        </section>
+<body class="text-on-surface antialiased">
+  <!-- Top Navigation Bar -->
+  <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg no-border shadow-none">
+    <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto font-manrope antialiased tracking-tight">
+      <div class="text-2xl font-extrabold tracking-tighter text-slate-950 dark:text-white">
+        Alexis Vendrix
+      </div>
+      <div class="hidden md:flex items-center space-x-8">
+        <a class="text-slate-950 dark:text-white font-bold border-b-2 border-blue-600 pb-1 hover:text-blue-600 transition-colors duration-300" href="index.html">About</a>
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="cv.html">CV</a>
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="projects.html">Skills</a>
+      </div>
+      <button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-bold scale-95 active:scale-100 transition-all hover:bg-primary-container">
+        Contact
+      </button>
     </div>
+  </nav>
 
-    <footer class="footer">
-        <p>&copy; 2026 Alexis Vendrix. All rights reserved.</p>
-    </footer>
+  <main class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
+    <!-- Hero / Header -->
+    <header class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-12">
+      <div class="max-w-3xl">
+        <span class="text-xs font-bold tracking-[0.2em] uppercase text-blue-700 bg-blue-100 px-3 py-1 rounded mb-6 inline-block">Data Professional</span>
+        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter text-primary mb-8 leading-[0.9]">
+          Building Data <br/>Solutions That Scale.
+        </h1>
+        <p class="text-xl text-on-surface-variant leading-relaxed font-light">
+          Senior Data Analyst & Engineer with 8+ years of expertise in analytics, ETL pipelines, and business intelligence. Specialized in credit risk analytics, data visualization, and building robust data architectures for enterprise systems.
+        </p>
+      </div>
+      <div class="flex flex-col gap-4 text-right">
+        <div class="text-sm font-medium text-on-surface-variant">Based in Barcelona, Spain</div>
+        <div class="text-sm font-medium text-on-surface-variant">a.vendrix@gmail.com</div>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="mb-32">
+      <div class="flex items-center justify-between mb-16">
+        <h2 class="text-3xl font-extrabold tracking-tight text-primary">About Me</h2>
+        <div class="h-px flex-grow ml-8 bg-surface-container-high hidden md:block"></div>
+      </div>
+      <div class="grid md:grid-cols-2 gap-12">
+        <div>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            I'm a data-driven professional with a passion for transforming complex datasets into actionable insights. Throughout my career, I've worked across multiple industries—banking, insurance, and leasing—developing dashboards, automating ETL pipelines, and implementing regulatory reporting solutions.
+          </p>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            My expertise spans the full data lifecycle: from requirements gathering and database design to advanced analytics and visualization. I'm fluent in modern data tools and have a strong foundation in statistical analysis and risk modeling.
+          </p>
+        </div>
+        <div class="bg-surface-container-low p-10 rounded-xl">
+          <h3 class="text-xl font-bold text-primary mb-6">Key Strengths</h3>
+          <ul class="space-y-4 text-on-surface-variant">
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold mt-1">•</span>
+              <span><strong>Analytics & BI:</strong> Dashboard development, KPI tracking, and data storytelling</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold mt-1">•</span>
+              <span><strong>Data Engineering:</strong> ETL pipeline design, database optimization, and data quality</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold mt-1">•</span>
+              <span><strong>Domain Expertise:</strong> Credit risk, regulatory reporting, and financial analytics</span>
+            </li>
+            <li class="flex items-start gap-3">
+              <span class="text-blue-600 font-bold mt-1">•</span>
+              <span><strong>Technical Skills:</strong> SQL, Python, SAS, Tableau, Qlik, and cloud platforms</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Highlights Section -->
+    <section class="grid md:grid-cols-3 gap-8 mb-32">
+      <div class="bg-surface-container-low p-10 rounded-xl">
+        <span class="material-symbols-outlined text-blue-600 text-4xl block mb-4">trending_up</span>
+        <h3 class="text-xl font-bold text-primary mb-3">Data-Driven Insights</h3>
+        <p class="text-on-surface-variant">Transform raw data into strategic insights that drive business decisions.</p>
+      </div>
+      <div class="bg-surface-container-low p-10 rounded-xl">
+        <span class="material-symbols-outlined text-blue-600 text-4xl block mb-4">architecture</span>
+        <h3 class="text-xl font-bold text-primary mb-3">Scalable Architecture</h3>
+        <p class="text-on-surface-variant">Design and build data systems that grow with your organization's needs.</p>
+      </div>
+      <div class="bg-surface-container-low p-10 rounded-xl">
+        <span class="material-symbols-outlined text-blue-600 text-4xl block mb-4">precision_manufacturing</span>
+        <h3 class="text-xl font-bold text-primary mb-3">Quality & Precision</h3>
+        <p class="text-on-surface-variant">Ensure data integrity and accuracy across all analytics workflows.</p>
+      </div>
+    </section>
+
+    <!-- Languages Section -->
+    <section class="grid md:grid-cols-2 gap-8 items-start mb-32">
+      <div class="bg-surface-container-low p-10 rounded-xl">
+        <div class="flex items-center gap-4 mb-10">
+          <span class="material-symbols-outlined text-primary text-3xl">language</span>
+          <h2 class="text-2xl font-extrabold tracking-tight">Languages</h2>
+        </div>
+        <div class="space-y-6">
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-bold text-primary">French</span>
+              <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Native</span>
+            </div>
+            <div class="w-full bg-surface-container-highest rounded-full h-2"></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-bold text-primary">English</span>
+              <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Proficient</span>
+            </div>
+            <div class="w-full bg-surface-container-highest rounded-full h-2"></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-bold text-primary">Dutch</span>
+              <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Advanced</span>
+            </div>
+            <div class="w-5/6 bg-surface-container-highest rounded-full h-2"></div>
+          </div>
+          <div>
+            <div class="flex justify-between mb-2">
+              <span class="text-sm font-bold text-primary">Spanish</span>
+              <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Beginner</span>
+            </div>
+            <div class="w-2/5 bg-surface-container-highest rounded-full h-2"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="bg-surface-container-highest p-10 rounded-xl">
+        <div class="flex items-center gap-4 mb-10">
+          <span class="material-symbols-outlined text-primary text-3xl">interests</span>
+          <h2 class="text-2xl font-extrabold tracking-tight">Interests</h2>
+        </div>
+        <div class="grid gap-6">
+          <div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+            <div>
+              <div class="text-sm font-bold text-primary">Photography</div>
+              <div class="text-xs text-on-surface-variant">Creative Visual Storytelling (MotionKaptur)</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+            <div>
+              <div class="text-sm font-bold text-primary">New Technology</div>
+              <div class="text-xs text-on-surface-variant">Staying ahead in the data & AI landscape</div>
+            </div>
+          </div>
+          <div class="flex items-center justify-between p-4 bg-surface-container-lowest rounded-lg">
+            <div>
+              <div class="text-sm font-bold text-primary">Sports</div>
+              <div class="text-xs text-on-surface-variant">Beach volleyball, paddle, cycling</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="bg-primary text-white p-16 rounded-xl text-center">
+      <h2 class="text-4xl font-extrabold mb-6">Let's Work Together</h2>
+      <p class="text-lg mb-8 text-white/90">Ready to build data solutions that drive impact? Get in touch.</p>
+      <a href="mailto:a.vendrix@gmail.com" class="inline-block bg-white text-primary px-8 py-4 rounded-md font-bold hover:bg-gray-100 transition-colors">
+        Send Me an Email
+      </a>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-slate-50 dark:bg-slate-950 w-full py-12 mt-20">
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8 font-manrope text-sm tracking-wide uppercase">
+      <div class="text-slate-500 dark:text-slate-400">
+        © 2026 Alexis Vendrix. All rights reserved.
+      </div>
+      <div class="flex gap-8">
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">LinkedIn</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">GitHub</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Email</a>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>

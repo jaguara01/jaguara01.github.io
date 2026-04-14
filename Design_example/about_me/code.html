@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0edef",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fcf8fa",
+                    "tertiary-container": "#002114",
+                    "surface-container-low": "#f6f3f5",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#45464d",
+                    "on-tertiary-container": "#069669",
+                    "surface": "#fcf8fa",
+                    "background": "#fcf8fa",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-secondary-container": "#57657b",
+                    "primary": "#000000",
+                    "surface-variant": "#e4e2e4",
+                    "on-tertiary-fixed": "#002114",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#76777d",
+                    "surface-container-highest": "#e4e2e4",
+                    "surface-container-high": "#eae7e9",
+                    "secondary": "#515f74",
+                    "on-tertiary-fixed-variant": "#005137",
+                    "primary-fixed": "#dae2fd",
+                    "inverse-primary": "#bec6e0",
+                    "on-primary-container": "#7c839b",
+                    "inverse-on-surface": "#f3f0f2",
+                    "tertiary": "#000000",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1b1b1d",
+                    "outline-variant": "#c6c6cd",
+                    "inverse-surface": "#303032",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary-container": "#d5e3fd",
+                    "tertiary-fixed-dim": "#68dba9",
+                    "surface-dim": "#dcd9db",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d5e3fd",
+                    "surface-tint": "#565e74",
+                    "tertiary-fixed": "#85f8c4",
+                    "on-background": "#1b1b1d",
+                    "primary-container": "#131b2e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fcf8fa;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<span class="text-2xl font-extrabold tracking-tighter text-slate-950 dark:text-white">The Architect</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-950 dark:text-white font-bold border-b-2 border-emerald-600 pb-1 hover:text-emerald-600 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors duration-300" href="#">CV</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors duration-300" href="#">Projects</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-bold transition-transform scale-95 active:scale-100 hover:bg-primary-container">Hire Me</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32 pb-20">
+<!-- Hero Section: Editorial Layout -->
+<section class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-end">
+<div class="lg:col-span-7 mb-12 lg:mb-0">
+<span class="text-sm font-label uppercase tracking-widest text-on-surface-variant mb-4 block">Independent Designer &amp; Strategist</span>
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-primary leading-[0.9] mb-8">
+                    Crafting <br/>Digital <br/><span class="text-on-tertiary-container">Legacies.</span>
+</h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-xl font-light leading-relaxed">
+                    I bridge the gap between architectural precision and fluid digital experiences, creating systems that endure.
+                </p>
+</div>
+<div class="lg:col-span-5 relative">
+<div class="aspect-[4/5] bg-surface-container-high overflow-hidden rounded-lg shadow-xl translate-y-8 lg:translate-y-16">
+<img alt="Professional portrait of a minimalist designer" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" data-alt="Close-up professional headshot of a person with a thoughtful expression, warm studio lighting, minimalist neutral background, editorial style" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBz_0Q6JpGgFTWhuo-vGeU9pvz2EU8Azn4mlDLsU4n_HczgIEw4bEBebhKxyeuxOrYZnbWc4EkEDU1GhKpGdILPCSSRHf6v3fGkulkkgkdUAbrYRlT6wq2IfcKf4UdQByMIErHaoMsVYXe1sUR3Mm_ieKyP6EXfDP2SDMC6JtWj915gdMV41DXyLl0OrP_wC6XWuCxchRx7-2fZDCaU2lcU3rVPIvdZwRNllKB-WrzyfOCwm3a_O86MftwAi8vmSnF-6FE0-hBlI9E"/>
+</div>
+</div>
+</section>
+<!-- Biography Section: Tonal Surface Shift -->
+<section class="mt-40 bg-surface-container-low py-32">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-16">
+<div class="lg:col-span-4">
+<h2 class="text-3xl font-headline font-bold text-primary mb-6">The Philosophy</h2>
+<div class="w-12 h-1 bg-on-tertiary-container mb-8"></div>
+</div>
+<div class="lg:col-span-8 space-y-8">
+<p class="text-2xl text-on-surface font-medium leading-relaxed">
+                        Design is not a coat of paint; it is the structural integrity of communication. I approach every project with the mindset of an architect—starting with the foundation of user intent and building upwards towards visual delight.
+                    </p>
+<p class="text-lg text-on-surface-variant leading-loose">
+                        With over a decade of experience across fintech, luxury retail, and editorial publishing, I’ve learned that the most powerful designs are often the ones that feel inevitable. My work is defined by intentional asymmetry, masterful white space, and a commitment to typography that speaks before it is read.
+                    </p>
+<div class="pt-8 flex flex-wrap gap-4">
+<button class="bg-primary text-on-primary px-8 py-4 rounded-md flex items-center gap-3 font-bold hover:shadow-lg transition-all group">
+                            Download CV
+                            <span class="material-symbols-outlined text-sm group-hover:translate-y-1 transition-transform">download</span>
+</button>
+<button class="border-2 border-primary text-primary px-8 py-4 rounded-md font-bold hover:bg-primary hover:text-on-primary transition-all">
+                            View Case Studies
+                        </button>
+</div>
+</div>
+</div>
+</section>
+<!-- Expertise: Bento Grid Style -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<h2 class="text-sm font-label uppercase tracking-widest text-on-surface-variant mb-12">Core Expertise</h2>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+<!-- Card 1 -->
+<div class="p-10 bg-surface-container-lowest border border-outline-variant/15 rounded-xl hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 block">architecture</span>
+<h3 class="text-xl font-bold mb-4">Design Systems</h3>
+<p class="text-on-surface-variant leading-relaxed">Scalable component libraries that maintain brand consistency across complex multi-platform ecosystems.</p>
+</div>
+<!-- Card 2 -->
+<div class="p-10 bg-surface-container-lowest border border-outline-variant/15 rounded-xl hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 block">auto_awesome</span>
+<h3 class="text-xl font-bold mb-4">Visual Strategy</h3>
+<p class="text-on-surface-variant leading-relaxed">Editorial-led art direction that elevates digital presence from functional to aspirational.</p>
+</div>
+<!-- Card 3 -->
+<div class="p-10 bg-surface-container-lowest border border-outline-variant/15 rounded-xl hover:bg-surface-container-high transition-colors group">
+<span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-6 block">terminal</span>
+<h3 class="text-xl font-bold mb-4">Creative Dev</h3>
+<p class="text-on-surface-variant leading-relaxed">Seamlessly bridging the gap between high-fidelity design prototypes and production-ready code.</p>
+</div>
+</div>
+</section>
+<!-- Experience: Tonal Timeline -->
+<section class="max-w-7xl mx-auto px-8 py-32 border-t border-surface-variant">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+<div class="lg:col-span-4">
+<h2 class="text-3xl font-headline font-bold text-primary">Experience</h2>
+</div>
+<div class="lg:col-span-8 space-y-24">
+<div class="relative group">
+<span class="text-9xl font-extrabold text-surface-variant absolute -top-12 -left-4 -z-10 opacity-40 group-hover:opacity-100 transition-opacity">2024</span>
+<div class="pt-4">
+<h4 class="text-sm font-label uppercase tracking-widest text-on-tertiary-container mb-2">Senior Design Lead</h4>
+<h3 class="text-2xl font-bold mb-4">Vanguard Editorial Studio</h3>
+<p class="text-on-surface-variant max-w-xl">Spearheading digital transformation for global high-end publications. Responsible for the intersection of UX and high-performance branding.</p>
+</div>
+</div>
+<div class="relative group">
+<span class="text-9xl font-extrabold text-surface-variant absolute -top-12 -left-4 -z-10 opacity-40 group-hover:opacity-100 transition-opacity">2021</span>
+<div class="pt-4">
+<h4 class="text-sm font-label uppercase tracking-widest text-on-tertiary-container mb-2">Product Architect</h4>
+<h3 class="text-2xl font-bold mb-4">Nexus Fintech Labs</h3>
+<p class="text-on-surface-variant max-w-xl">Designed the core interface for the next generation of decentralized banking apps, focusing on clarity and trust.</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Contact CTA -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="bg-primary-container text-on-primary rounded-3xl p-12 md:p-24 overflow-hidden relative">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8 max-w-2xl leading-tight">Ready to build something that lasts?</h2>
+<p class="text-on-primary-container text-xl mb-12 max-w-lg">I'm currently accepting select projects for Q4 2024. Let's talk about your vision.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-on-tertiary-container text-white px-10 py-5 rounded-md font-bold text-center hover:shadow-2xl transition-shadow" href="mailto:hello@architect.design">Get In Touch</a>
+<a class="border border-on-primary-container text-on-primary px-10 py-5 rounded-md font-bold text-center hover:bg-white hover:text-primary transition-all" href="#">Schedule a Call</a>
+</div>
+</div>
+<!-- Decorative element -->
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<span class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400">© 2024 Editorial Portfolio. Built with Authority.</span>
+<div class="flex gap-8">
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">LinkedIn</a>
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">GitHub</a>
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Twitter</a>
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>
