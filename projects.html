@@ -90,18 +90,19 @@
 <body class="text-on-surface antialiased">
   <!-- Top Navigation Bar -->
   <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg no-border shadow-none">
-    <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto font-manrope antialiased tracking-tight">
+    <div class="relative flex items-center w-full px-8 py-6 max-w-7xl mx-auto font-manrope antialiased tracking-tight">
       <div class="text-2xl font-extrabold tracking-tighter text-slate-950 dark:text-white">
         Alexis Vendrix
       </div>
-      <div class="hidden md:flex items-center space-x-8">
+      <div class="hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2">
         <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="index.html">About</a>
-        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="cv.html">CV</a>
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="cv.html">Resume</a>
         <a class="text-slate-950 dark:text-white font-bold border-b-2 border-blue-600 pb-1 hover:text-blue-600 transition-colors duration-300" href="projects.html">Skills</a>
       </div>
-      <button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-bold scale-95 active:scale-100 transition-all hover:bg-primary-container">
-        Contact
-      </button>
+      <div class="hidden md:flex items-center space-x-6 ml-auto">
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="https://www.linkedin.com/in/alexis-vendrix-a4479048/" target="_blank">LinkedIn</a>
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="https://github.com/jaguara01" target="_blank">GitHub</a>
+      </div>
     </div>
   </nav>
 
@@ -342,9 +343,8 @@
         © 2026 Alexis Vendrix. All rights reserved.
       </div>
       <div class="flex gap-8">
-        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">LinkedIn</a>
-        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">GitHub</a>
-        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Email</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="https://www.linkedin.com/in/alexis-vendrix-a4479048/" target="_blank">LinkedIn</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="https://github.com/jaguara01" target="_blank">GitHub</a>
       </div>
     </div>
   </footer>

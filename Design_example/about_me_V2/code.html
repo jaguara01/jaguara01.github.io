@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface-container": "#f0edef",
+                    "on-primary": "#ffffff",
+                    "surface-bright": "#fcf8fa",
+                    "tertiary-container": "#002114",
+                    "surface-container-low": "#f6f3f5",
+                    "secondary-fixed-dim": "#b9c7e0",
+                    "on-tertiary": "#ffffff",
+                    "on-surface-variant": "#45464d",
+                    "on-tertiary-container": "#069669",
+                    "surface": "#fcf8fa",
+                    "background": "#fcf8fa",
+                    "primary-fixed-dim": "#bec6e0",
+                    "on-primary-fixed-variant": "#3f465c",
+                    "on-secondary-container": "#57657b",
+                    "primary": "#000000",
+                    "surface-variant": "#e4e2e4",
+                    "on-tertiary-fixed": "#002114",
+                    "on-secondary-fixed": "#0d1c2f",
+                    "surface-container-lowest": "#ffffff",
+                    "on-secondary": "#ffffff",
+                    "outline": "#76777d",
+                    "surface-container-highest": "#e4e2e4",
+                    "surface-container-high": "#eae7e9",
+                    "secondary": "#515f74",
+                    "on-tertiary-fixed-variant": "#005137",
+                    "primary-fixed": "#dae2fd",
+                    "inverse-primary": "#bec6e0",
+                    "on-primary-container": "#7c839b",
+                    "inverse-on-surface": "#f3f0f2",
+                    "tertiary": "#000000",
+                    "error": "#ba1a1a",
+                    "on-error-container": "#93000a",
+                    "on-surface": "#1b1b1d",
+                    "outline-variant": "#c6c6cd",
+                    "inverse-surface": "#303032",
+                    "on-error": "#ffffff",
+                    "on-secondary-fixed-variant": "#3a485c",
+                    "on-primary-fixed": "#131b2e",
+                    "secondary-container": "#d5e3fd",
+                    "tertiary-fixed-dim": "#68dba9",
+                    "surface-dim": "#dcd9db",
+                    "error-container": "#ffdad6",
+                    "secondary-fixed": "#d5e3fd",
+                    "surface-tint": "#565e74",
+                    "tertiary-fixed": "#85f8c4",
+                    "on-background": "#1b1b1d",
+                    "primary-container": "#131b2e"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "fontFamily": {
+                    "headline": ["Manrope"],
+                    "body": ["Manrope"],
+                    "label": ["Manrope"]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        body {
+            font-family: 'Manrope', sans-serif;
+            background-color: #fcf8fa;
+        }
+        .architectural-path {
+            position: absolute;
+            left: 50%;
+            top: 0;
+            bottom: 0;
+            width: 1px;
+            background-color: rgba(0, 0, 0, 0.1);
+            transform: translateX(-50%);
+            z-index: 0;
+        }
+        .architectural-path::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -2px;
+            width: 5px;
+            height: 5px;
+            background: #069669;
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body class="bg-background text-on-surface selection:bg-tertiary-fixed-dim selection:text-on-tertiary-fixed">
+<!-- Top Navigation Bar -->
+<nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg">
+<div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto">
+<span class="text-2xl font-extrabold tracking-tighter text-slate-950 dark:text-white">The Architect</span>
+<div class="hidden md:flex gap-8 items-center">
+<a class="text-slate-950 dark:text-white font-bold border-b-2 border-emerald-600 pb-1 hover:text-emerald-600 transition-colors duration-300" href="#">About</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors duration-300" href="#">CV</a>
+<a class="text-slate-500 dark:text-slate-400 font-medium hover:text-emerald-600 transition-colors duration-300" href="#">Projects</a>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-md font-bold transition-transform scale-95 active:scale-100 hover:bg-primary-container">Hire Me</button>
+</div>
+<!-- Mobile Menu Toggle -->
+<div class="md:hidden">
+<span class="material-symbols-outlined text-on-surface">menu</span>
+</div>
+</div>
+</nav>
+<main class="pt-32">
+<!-- Editorial Hero Introduction -->
+<section class="max-w-7xl mx-auto px-8 pb-20">
+<h1 class="text-6xl md:text-8xl font-headline font-extrabold tracking-tighter text-primary leading-[0.9] mb-8">
+                Building the <br/><span class="text-on-tertiary-container">Person</span> <br/>Behind the Craft.
+            </h1>
+<p class="text-xl md:text-2xl text-on-surface-variant max-w-2xl font-light leading-relaxed">
+                A narrative of discipline, visual exploration, and the structural pursuit of excellence.
+            </p>
+</section>
+<!-- Alternating Zigzag Content Sections -->
+<div class="relative">
+<!-- Vertical Connecting Path -->
+<div class="architectural-path hidden lg:block"></div>
+<!-- Section 1: General About Me (Left-aligned) -->
+<section class="relative z-10 py-24 lg:py-40">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 lg:pr-12">
+<span class="text-sm font-label uppercase tracking-[0.2em] text-on-tertiary-container font-bold mb-6 block">Foundation</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8 leading-tight">Design Strategy &amp; Architectural Precision.</h2>
+<p class="text-lg text-on-surface-variant leading-loose mb-6">
+                            My professional journey is defined by the intersection of rigid structural thinking and fluid digital expression. I view every interface as a living building—one that requires a deep understanding of its inhabitants before a single stone is laid.
+                        </p>
+<p class="text-lg text-on-surface-variant leading-loose">
+                            As a strategist, I focus on the "why" as much as the "how." By employing architectural principles to digital systems, I create frameworks that are not only aesthetically superior but fundamentally scalable and enduring.
+                        </p>
+</div>
+<div class="lg:col-span-6">
+<div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img alt="Modern architectural design" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD_Vb6Z-EVyyXpNgsMkJZOoaRqmVJnMRYr__ucXUtH1Yt2fhxAacP-PHyqNpVqtr-9sIRmRu38T4x6zquMV4q3oCj-Tny4qnvv2GLJveyegwthj51tAXs7S2wuUDSdAyXTX9H3-z3qlD8BMYP-_vlNcjc0tgiSzOdoDOk4K-t8NCt6H2_iIkRktipeoBPkwWvZZ1FSLOGCGDTB1LEEHJdllcYbUh5zG5cyYC7foP9CSuf4x0CJUQQf9SralsI3fhVavqtRBBYqfGvE"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 2: Digital Art and Photography (Right-aligned) -->
+<section class="relative z-10 py-24 lg:py-40 bg-surface-container-low">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 lg:order-2 lg:pl-12">
+<span class="text-sm font-label uppercase tracking-[0.2em] text-on-tertiary-container font-bold mb-6 block">Perspective</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8 leading-tight">Visual Storytelling &amp; Digital Art.</h2>
+<p class="text-lg text-on-surface-variant leading-loose mb-6">
+                            Outside the constraints of commercial systems, I explore the world through a lens. My passion for photography and generative art allows me to experiment with light, shadow, and organic forms that eventually find their way back into my design work.
+                        </p>
+<p class="text-lg text-on-surface-variant leading-loose">
+                            These creative pursuits are the testing grounds for my visual theories. Whether capturing the raw geometry of an urban landscape or crafting abstract digital textures, the goal is always the same: to tell a story that resonates without words.
+                        </p>
+</div>
+<div class="lg:col-span-6 lg:order-1">
+<div class="aspect-[3/4] bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img alt="Atmospheric photography" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAzZELdAdO6XYDwfALd02x4-fIvjjkM8NSiuykoLmRwgHvtj_EjmfHbBqVbzdT6H8e8XW3f2ajc0edcR6rQ_wQaK78jk3Ja-glExyEYFoe25lOCPUpK2sbjAWBJSs7zwGdSOhAgBTE-h6BMz1KOJgczSCUYmK3nqoK6ig1sWDl9KsOnhFAadffrqZ2HHuLH3Cj_6rUw0Xp1c9Ubyzz2Hd1F_5cVEu0N6zrtY9r2UjWKWZ2EAZdKjpjfY74LzFpZH6yCTEjXp-WdM6g"/>
+</div>
+</div>
+</div>
+</section>
+<!-- Section 3: Sport (Left-aligned) -->
+<section class="relative z-10 py-24 lg:py-40">
+<div class="max-w-7xl mx-auto px-8 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+<div class="lg:col-span-6 lg:pr-12">
+<span class="text-sm font-label uppercase tracking-[0.2em] text-on-tertiary-container font-bold mb-6 block">Discipline</span>
+<h2 class="text-4xl md:text-5xl font-headline font-bold text-primary mb-8 leading-tight">The Rhythm of Physical Endurance.</h2>
+<p class="text-lg text-on-surface-variant leading-loose mb-6">
+                            I believe that a sharp mind requires a resilient body. Sport is my meditation—a space where discipline and physical limits are tested daily. Whether it's the repetitive rhythm of a long-distance run or the calculated focus of strength training, movement is essential to my process.
+                        </p>
+<p class="text-lg text-on-surface-variant leading-loose">
+                            The same rigor I apply to a design system is mirrored in my training. It's about consistency, incremental improvement, and the mental fortitude to push past the "good enough" to reach the exceptional.
+                        </p>
+</div>
+<div class="lg:col-span-6">
+<div class="aspect-square bg-surface-container-high rounded-xl overflow-hidden shadow-2xl">
+<img alt="Focused athlete in movement" class="w-full h-full object-cover grayscale hover:grayscale-0 transition-all duration-700" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEyhj2kbiDTNsNs9rnps2cL95YFbQcaAiB6wFknzG7UDh2HNLehrKdsxhp2x2YHD-freXI_30cp7MI3_XOyUQgDq-cpX4h78TzXL7KhEjHyEP9bhkF0F14KZtEh5hWyiyEVxGf3hBK3QNCmDEpO1i0FpXLoCrh46wOAPG0PE_VC65RMiTDNKUwdrqfyrt9tOdQVb62yzqCpH22VILLqPfBvDrFiUJ-1eqatKs01znqTC1X37cl7NVx5gKpJlO6Pgr4N3YkzUQY0Zs"/>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- Contact CTA (Reused from existing) -->
+<section class="max-w-7xl mx-auto px-8 py-32">
+<div class="bg-primary-container text-on-primary rounded-3xl p-12 md:p-24 overflow-hidden relative">
+<div class="relative z-10">
+<h2 class="text-4xl md:text-6xl font-headline font-bold mb-8 max-w-2xl leading-tight">Ready to build something that lasts?</h2>
+<p class="text-on-primary-container text-xl mb-12 max-w-lg">I'm currently accepting select projects for Q4 2024. Let's talk about your vision.</p>
+<div class="flex flex-col sm:flex-row gap-6">
+<a class="bg-on-tertiary-container text-white px-10 py-5 rounded-md font-bold text-center hover:shadow-2xl transition-shadow" href="mailto:hello@architect.design">Get In Touch</a>
+<a class="border border-on-primary-container text-on-primary px-10 py-5 rounded-md font-bold text-center hover:bg-white hover:text-primary transition-all" href="#">Schedule a Call</a>
+</div>
+</div>
+<div class="absolute top-0 right-0 w-1/2 h-full opacity-10 pointer-events-none">
+<span class="material-symbols-outlined text-[400px]" style="font-variation-settings: 'FILL' 1;">architecture</span>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full py-12 mt-20 bg-slate-50 dark:bg-slate-950">
+<div class="flex flex-col md:flex-row justify-between items-center px-8 max-w-7xl mx-auto gap-8">
+<span class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400">© 2024 Editorial Portfolio. Built with Authority.</span>
+<div class="flex gap-8">
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">LinkedIn</a>
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">GitHub</a>
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Twitter</a>
+<a class="font-manrope text-sm tracking-wide uppercase text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Email</a>
+</div>
+</div>
+</footer>
+</body></html>

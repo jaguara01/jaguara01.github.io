@@ -90,79 +90,110 @@
 <body class="text-on-surface antialiased">
   <!-- Top Navigation Bar -->
   <nav class="fixed top-0 w-full z-50 bg-white/80 dark:bg-slate-900/80 backdrop-blur-lg no-border shadow-none">
-    <div class="flex justify-between items-center w-full px-8 py-6 max-w-7xl mx-auto font-manrope antialiased tracking-tight">
+    <div class="relative flex items-center w-full px-8 py-6 max-w-7xl mx-auto font-manrope antialiased tracking-tight">
       <div class="text-2xl font-extrabold tracking-tighter text-slate-950 dark:text-white">
         Alexis Vendrix
       </div>
-      <div class="hidden md:flex items-center space-x-8">
+      <div class="hidden md:flex items-center space-x-8 absolute left-1/2 -translate-x-1/2">
         <a class="text-slate-950 dark:text-white font-bold border-b-2 border-blue-600 pb-1 hover:text-blue-600 transition-colors duration-300" href="index.html">About</a>
-        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="cv.html">CV</a>
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="cv.html">Resume</a>
         <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="projects.html">Skills</a>
       </div>
-      <button class="bg-primary text-on-primary px-6 py-2.5 rounded-md font-bold scale-95 active:scale-100 transition-all hover:bg-primary-container">
-        Contact
-      </button>
+      <div class="hidden md:flex items-center space-x-6 ml-auto">
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="https://www.linkedin.com/in/alexis-vendrix-a4479048/" target="_blank">LinkedIn</a>
+        <a class="text-slate-500 dark:text-slate-400 font-medium hover:text-blue-600 transition-colors duration-300" href="https://github.com/jaguara01" target="_blank">GitHub</a>
+      </div>
     </div>
   </nav>
 
   <main class="pt-32 pb-20 px-8 max-w-7xl mx-auto">
     <!-- Hero / Header -->
-    <header class="mb-24 flex flex-col md:flex-row md:items-end justify-between gap-12">
+    <header class="mb-24 flex flex-col md:flex-row md:items-center justify-between gap-12">
       <div class="max-w-3xl">
-        <span class="text-xs font-bold tracking-[0.2em] uppercase text-blue-700 bg-blue-100 px-3 py-1 rounded mb-6 inline-block">Data Professional</span>
-        <h1 class="text-6xl md:text-8xl font-extrabold tracking-tighter text-primary mb-8 leading-[0.9]">
-          Building Data <br/>Solutions That Scale.
+        <!-- <span class="text-xs font-bold tracking-[0.2em] uppercase text-blue-700 bg-blue-100 px-3 py-1 rounded mb-6 inline-block">Data Professional</span> -->
+        <h1 class="text-6xl md:text-4xl font-extrabold tracking-tighter text-primary mb-8 leading-[0.9]">
+          About Me
         </h1>
-        <p class="text-xl text-on-surface-variant leading-relaxed font-light">
+        <!-- <p class="text-xl text-on-surface-variant leading-relaxed font-light">
           Senior Data Analyst & Engineer with 8+ years of expertise in analytics, ETL pipelines, and business intelligence. Specialized in credit risk analytics, data visualization, and building robust data architectures for enterprise systems.
-        </p>
+        </p> -->
       </div>
-      <div class="flex flex-col gap-4 text-right">
+      <div class="flex flex-col gap-1 text-right">
         <div class="text-sm font-medium text-on-surface-variant">Based in Barcelona, Spain</div>
-        <div class="text-sm font-medium text-on-surface-variant">a.vendrix@gmail.com</div>
+        <div class="text-sm font-medium text-on-surface-variant">and Brussels, Belgium</div>
       </div>
     </header>
 
     <!-- About Section -->
     <section class="mb-32">
-      <div class="flex items-center justify-between mb-16">
+      <!-- <div class="flex items-center justify-between mb-16">
         <h2 class="text-3xl font-extrabold tracking-tight text-primary">About Me</h2>
         <div class="h-px flex-grow ml-8 bg-surface-container-high hidden md:block"></div>
-      </div>
-      <div class="grid md:grid-cols-2 gap-12">
+      </div> -->
+
+      <!-- About Me - Text Left, Image Right -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
         <div>
+          <h3 class="text-2xl font-bold text-primary mb-6">Who I Am</h3>
           <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
-            I'm a data-driven professional with a passion for transforming complex datasets into actionable insights. Throughout my career, I've worked across multiple industries—banking, insurance, and leasing—developing dashboards, automating ETL pipelines, and implementing regulatory reporting solutions.
+            I am a Data Professional (Data Engineer, data analyst and developer) with almost a decade of experience designing and maintaining complex data ecosystems for large-scale financial institutions. Throughout my career, I have specialized in the full data lifecycle—from architecting ETL pipelines and ensuring data quality to delivering advanced analytics that drive strategic business decisions.
           </p>
           <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
-            My expertise spans the full data lifecycle: from requirements gathering and database design to advanced analytics and visualization. I'm fluent in modern data tools and have a strong foundation in statistical analysis and risk modeling.
+            To ensure I stay at the forefront of the industry, I am currently pursuing a Master’s Degree in Data Science. This academic journey is focused on mastering state-of-the-art solutions.
+          </p>
+          <p class="text-lg text-on-surface-variant leading-relaxed">
+            I am driven by a profound interest in Artificial Intelligence, not merely as a tool for technical optimization, but as a way to improve the final user experience.
           </p>
         </div>
-        <div class="bg-surface-container-low p-10 rounded-xl">
-          <h3 class="text-xl font-bold text-primary mb-6">Key Strengths</h3>
-          <ul class="space-y-4 text-on-surface-variant">
-            <li class="flex items-start gap-3">
-              <span class="text-blue-600 font-bold mt-1">•</span>
-              <span><strong>Analytics & BI:</strong> Dashboard development, KPI tracking, and data storytelling</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-blue-600 font-bold mt-1">•</span>
-              <span><strong>Data Engineering:</strong> ETL pipeline design, database optimization, and data quality</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-blue-600 font-bold mt-1">•</span>
-              <span><strong>Domain Expertise:</strong> Credit risk, regulatory reporting, and financial analytics</span>
-            </li>
-            <li class="flex items-start gap-3">
-              <span class="text-blue-600 font-bold mt-1">•</span>
-              <span><strong>Technical Skills:</strong> SQL, Python, SAS, Tableau, Qlik, and cloud platforms</span>
-            </li>
-          </ul>
+        <div class="bg-surface-container-low p-8 rounded-xl overflow-hidden flex items-center justify-center min-h-[400px]">
+          <img src="images/DSC02483-3.jpg" alt="Portrait" class="w-full h-full object-cover rounded-lg">
+        </div>
+      </div>
+
+      <!-- Visual Art & Photography - Image Left, Text Right -->
+      <div class="grid md:grid-cols-2 gap-12 items-center mb-24">
+        <div class="bg-surface-container-low p-8 rounded-xl overflow-hidden flex items-center justify-center min-h-[400px]">
+          <div class="text-center text-on-surface-variant">
+            <img src="images/R0003005.jpg" alt="Portrait" class="w-full h-full object-cover rounded-lg">
+          </div>
+        </div>
+        <div>
+          <h3 class="text-2xl font-bold text-primary mb-6">Visual Art & Photography</h3>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            Beyond data and analytics, I am deeply passionate about visual storytelling through photography. My work under MotionKaptur focuses on capturing authentic moments that tell compelling narratives. Photography is more than a hobby for me—it’s a creative outlet that allows me to see the world differently.
+          </p>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            For many years, I worked as a freelancer specializing in event photography, particularly festival photography. I’ve had the privilege of capturing unforgettable moments at major festivals like Tomorrowland, Intents Festival, and for the city of Brussels. This work allowed me to travel across multiple countries and to discover new places.
+          </p>
+          <p class="text-lg text-on-surface-variant leading-relaxed">
+            Whether it’s composing the perfect shot or designing an elegant data visualization, both disciplines demand attention to detail, a keen eye for patterns, and the ability to communicate complex ideas simply and powerfully.
+          </p>
+        </div>
+      </div>
+
+      <!-- Sports - Text Left, Image Right -->
+      <div class="grid md:grid-cols-2 gap-12 items-center">
+        <div>
+          <h3 class="text-2xl font-bold text-primary mb-6">Sports & Active Lifestyle</h3>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            Sports have been a defining part of my life. Growing up, I was passionate about basketball and volleyball, which taught me teamwork, strategy, and competitive spirit. Today, I’ve evolved my athletic pursuits toward endurance and functional fitness challenges. I’m deeply committed to Hyrox and running—from short distances to full marathons—and actively participate in multiple races and competitions throughout the year.
+          </p>
+          <p class="text-lg text-on-surface-variant mb-6 leading-relaxed">
+            These endeavors have become more than just physical challenges; they’re a deliberate practice in discipline and building sustainable healthy habits. Each training session, each race, reinforces the importance of consistency, incremental progress, and the power of dedicated effort over time.
+          </p>
+          <p class="text-lg text-on-surface-variant leading-relaxed">
+            An active lifestyle isn’t just essential to my well-being—it’s fundamental to who I am.
+          </p>
+        </div>
+        <div class="bg-surface-container-low p-8 rounded-xl overflow-hidden flex items-center justify-center min-h-[400px]">
+          <div class="text-center text-on-surface-variant">
+            <img src="images/photo_1~2.jpg" alt="Portrait" class="w-full h-full object-cover rounded-lg">
+          </div>
         </div>
       </div>
     </section>
 
-    <!-- Highlights Section -->
+    <!-- Highlights Section
     <section class="grid md:grid-cols-3 gap-8 mb-32">
       <div class="bg-surface-container-low p-10 rounded-xl">
         <span class="material-symbols-outlined text-blue-600 text-4xl block mb-4">trending_up</span>
@@ -179,7 +210,7 @@
         <h3 class="text-xl font-bold text-primary mb-3">Quality & Precision</h3>
         <p class="text-on-surface-variant">Ensure data integrity and accuracy across all analytics workflows.</p>
       </div>
-    </section>
+    </section> -->
 
     <!-- Languages Section -->
     <section class="grid md:grid-cols-2 gap-8 items-start mb-32">
@@ -206,21 +237,21 @@
           <div>
             <div class="flex justify-between mb-2">
               <span class="text-sm font-bold text-primary">Dutch</span>
-              <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Advanced</span>
+              <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Intermediate</span>
             </div>
-            <div class="w-5/6 bg-surface-container-highest rounded-full h-2"></div>
+            <div class="w-3/6 bg-surface-container-highest rounded-full h-2"></div>
           </div>
           <div>
             <div class="flex justify-between mb-2">
               <span class="text-sm font-bold text-primary">Spanish</span>
               <span class="text-xs font-bold uppercase tracking-tighter text-on-tertiary-container bg-blue-100 px-2 py-0.5 rounded">Beginner</span>
             </div>
-            <div class="w-2/5 bg-surface-container-highest rounded-full h-2"></div>
+            <div class="w-1/5 bg-surface-container-highest rounded-full h-2"></div>
           </div>
         </div>
       </div>
 
-      <div class="bg-surface-container-highest p-10 rounded-xl">
+      <!-- <div class="bg-surface-container-highest p-10 rounded-xl">
         <div class="flex items-center gap-4 mb-10">
           <span class="material-symbols-outlined text-primary text-3xl">interests</span>
           <h2 class="text-2xl font-extrabold tracking-tight">Interests</h2>
@@ -246,9 +277,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <!-- Call to Action -->
+    <!-- Call to Action
     <section class="bg-primary text-white p-16 rounded-xl text-center">
       <h2 class="text-4xl font-extrabold mb-6">Let's Work Together</h2>
       <p class="text-lg mb-8 text-white/90">Ready to build data solutions that drive impact? Get in touch.</p>
@@ -256,6 +287,7 @@
         Send Me an Email
       </a>
     </section>
+    -->
   </main>
 
   <!-- Footer -->
@@ -265,9 +297,8 @@
         © 2026 Alexis Vendrix. All rights reserved.
       </div>
       <div class="flex gap-8">
-        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">LinkedIn</a>
-        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">GitHub</a>
-        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="#">Email</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="https://www.linkedin.com/in/alexis-vendrix-a4479048/" target="_blank">LinkedIn</a>
+        <a class="text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white transition-all" href="https://github.com/jaguara01" target="_blank">GitHub</a>
       </div>
     </div>
   </footer>
